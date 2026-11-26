@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#126b43">
+  <meta name="description" content="Discover scholarship programmes, grants and study opportunities for Nigerian students.">
+  <title>Scholarship Finder Africa | Find opportunities. Fund your future.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">Helping Nigerian students find opportunities to study, grow and succeed</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Scholarship Finder Africa home">
+      <span class="brand-mark">S<span>+</span></span>
+      <span>Scholarship Finder <b>Africa</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#opportunities">Find scholarships</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#guides">Application tips</a>
+      <a class="nav-cta" href="#newsletter">Get alerts <span>→</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> YOUR NEXT OPPORTUNITY STARTS HERE</div>
+        <h1>Find the funding.<br><em>Build your future.</em></h1>
+        <p class="hero-text">Explore scholarship programmes, grants and study opportunities — starting with Nigerian students, with Africa in our sights.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#opportunities">Explore opportunities <span>→</span></a>
+          <a class="text-link" href="#how-it-works">How it works</a>
+        </div>
+        <div class="trust-note"><span class="check">✓</span> Clear information · Official application links · Student-first guidance</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a student graduating">
+        <div class="art-circle"></div><div class="art-card card-one"><span>✦</span><b>Your goals</b><small>Deserve a chance</small></div>
+        <div class="graduate"><div class="cap"></div><div class="head"></div><div class="body-shape"></div><div class="book"></div></div>
+        <div class="art-card card-two"><span class="mini-check">✓</span><b>Keep moving</b><small>One step at a time</small></div>
+        <div class="art-caption">OPPORTUNITY OPENS DOORS</div>
+      </div>
+    </section>
+
+    <section class="search-panel" id="opportunities">
+      <div class="search-heading"><div><span class="section-kicker">EXPLORE YOUR OPTIONS</span><h2>Find an opportunity</h2></div><p>Search by programme name or area of interest.</p></div>
+      <div class="filters">
+        <label class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search scholarships, grants, programmes..." aria-label="Search opportunities"></label>
+        <label><span class="sr-only">Study level</span><select id="levelFilter"><option value="">All study levels</option><option>Undergraduate</option><option>Postgraduate</option><option>Doctoral</option><option>Various levels</option></select></label>
+        <label><span class="sr-only">Opportunity type</span><select id="typeFilter"><option value="">All opportunity types</option><option>Scholarship</option><option>Fellowship</option><option>Grant</option></select></label>
+        <button class="button button-green" id="searchButton">Search</button>
+      </div>
+      <div class="filter-foot"><span id="resultCount">3 programme profiles</span><span>Always confirm current dates and eligibility with the provider.</span></div>
+    </section>
+
+    <section class="directory section-wrap">
+      <div class="section-heading"><div><span class="section-kicker">START YOUR SEARCH</span><h2>Explore programme profiles</h2><p>Get familiar with established funding programmes and visit their official websites for current application information.</p></div><span class="pill">Nigeria first · Africa next</span></div>
+      <div class="cards" id="opportunityList">
+        <article class="opportunity-card" data-name="Chevening Scholarships" data-level="Postgraduate" data-type="Scholarship" data-tags="United Kingdom masters international study">
+          <div class="card-top"><span class="category">SCHOLARSHIP</span><span class="bookmark" aria-hidden="true">☆</span></div>
+          <div class="provider-icon purple">C</div><h3>Chevening Scholarships</h3><p class="card-desc">Explore the UK government's international scholarship programme for emerging leaders.</p>
+          <div class="meta"><span>Postgraduate</span><span>United Kingdom</span></div>
+          <div class="card-bottom"><span class="status status-info">Check current cycle</span><a href="https://www.chevening.org/scholarships/" target="_blank" rel="noopener">Official website ↗</a></div>
+        </article>
+        <article class="opportunity-card" data-name="Commonwealth Scholarships" data-level="Postgraduate" data-type="Scholarship" data-tags="Commonwealth masters doctoral study">
+          <div class="card-top"><span class="category">SCHOLARSHIP</span><span class="bookmark" aria-hidden="true">☆</span></div>
+          <div class="provider-icon blue">C</div><h3>Commonwealth Scholarships</h3><p class="card-desc">Discover scholarship opportunities supporting eligible Commonwealth citizens to study in the UK.</p>
+          <div class="meta"><span>Postgraduate</span><span>United Kingdom</span></div>
+          <div class="card-bottom"><span class="status status-info">Check current cycle</span><a href="https://cscuk.fcdo.gov.uk/scholarships/" target="_blank" rel="noopener">Official website ↗</a></div>
+        </article>
+        <article class="opportunity-card" data-name="Mastercard Foundation Scholars Program" data-level="Various levels" data-type="Scholarship" data-tags="Africa university education">
+          <div class="card-top"><span class="category">SCHOLARSHIP</span><span class="bookmark" aria-hidden="true">☆</span></div>
+          <div class="provider-icon gold">M</div><h3>Mastercard Foundation Scholars Program</h3><p class="card-desc">Learn about partner-university programmes supporting talented young people in Africa.</p>
+          <div class="meta"><span>Various levels</span><span>Africa</span></div>
+          <div class="card-bottom"><span class="status status-info">Check partner intake</span><a href="https://mastercardfdn.org/" target="_blank" rel="noopener">Official website ↗</a></div>
+        </article>
+      </div>
+      <p class="directory-note"><strong>Important:</strong> These are starter programme profiles, not confirmation that applications are currently open. Eligibility, participating institutions and deadlines can change. Always check the official provider before applying. We will add individually verified listings as the directory develops.</p>
+      <div class="empty-state" id="emptyState" hidden>No matching programme profiles. Try a different search or filter.</div>
+    </section>
+
+    <section class="steps-section" id="how-it-works">
+      <div class="section-wrap"><div class="center-heading"><span class="section-kicker">A CLEARER WAY FORWARD</span><h2>Your search, made simpler</h2><p>Finding an opportunity is only the beginning. We'll help you understand the next steps.</p></div>
+        <div class="steps-grid">
+          <div class="step"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Discover</h3><p>Search programmes by study level, subject, destination and opportunity type.</p></div>
+          <div class="step"><span class="step-number">02</span><div class="step-icon">✓</div><h3>Check eligibility</h3><p>Review requirements carefully and confirm details with the official provider.</p></div>
+          <div class="step"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Apply confidently</h3><p>Use official application links and practical guidance to prepare your application.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-section section-wrap" id="guides">
+      <div class="guide-copy"><span class="section-kicker">PREPARE WITH PURPOSE</span><h2>A stronger application starts with a plan.</h2><p>We'll build practical guides to help students prepare documents, write personal statements, request references and avoid common application mistakes.</p><a class="text-link green-link" href="mailto:hello@scholarshipfinderafrica.com?subject=Application%20guide%20updates">Ask about application guides →</a></div>
+      <div class="guide-list"><div><span>01</span><b>Prepare your documents</b><small>Build a checklist before you begin.</small></div><div><span>02</span><b>Write your personal statement</b><small>Tell your story with clarity and evidence.</small></div><div><span>03</span><b>Track your deadlines</b><small>Give yourself time to submit carefully.</small></div></div>
+    </section>
+
+    <section class="newsletter" id="newsletter"><div><span class="section-kicker light-kicker">STAY INFORMED</span><h2>Don't miss your next opportunity.</h2><p>Join our interest list to hear when new scholarship resources and student guides are available.</p></div><form id="interestForm"><label for="emailInput" class="sr-only">Email address</label><input id="emailInput" type="email" placeholder="Enter your email address" required><button class="button button-gold" type="submit">Register interest →</button><small id="formMessage">This early version does not yet store email addresses. Please check back as we launch alerts.</small></form></section>
+  </main>
+  <footer><div class="footer-main"><a class="brand footer-brand" href="#"><span class="brand-mark">S<span>+</span></span><span>Scholarship Finder <b>Africa</b></span></a><p>Helping students discover opportunities to learn, lead and make an impact.</p><div class="footer-links"><a href="#opportunities">Opportunities</a><a href="#how-it-works">How it works</a><a href="#guides">Guides</a><a href="mailto:hello@scholarshipfinderafrica.com">Contact</a></div></div><div class="copyright"><span>© <span id="year"></span> Scholarship Finder Africa</span><span>Created by <strong>Iheanacho Simon Lucky</strong></span></div><p class="disclaimer">We are an independent information platform and are not a scholarship provider or government agency. Always verify information with the official organisation.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
