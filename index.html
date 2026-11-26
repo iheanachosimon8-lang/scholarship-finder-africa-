@@ -65,24 +65,28 @@
           <div class="card-top"><span class="category">NIGERIA · SCHOLARSHIP</span><span class="bookmark" aria-hidden="true">☆</span></div>
           <div class="provider-icon gold">T</div><h3>NNPC / TotalEnergies National Merit Scholarship</h3><p class="card-desc">Annual scholarship grant for eligible first-year and second-year full-time Nigerian undergraduates.</p>
           <div class="meta"><span>Undergraduate</span><span>Nigeria</span></div>
+          <button class="details-button" type="button" data-details>View eligibility & details →</button>
           <div class="card-bottom"><span class="status status-open">Open · Closes 7 Dec 2026</span><a href="https://csr-ngscholarship.totalenergies.com/scholarships" target="_blank" rel="noopener">Official details ↗</a></div>
         </article>
         <article class="opportunity-card" data-name="NNPC TotalEnergies International Scholarship" data-level="Postgraduate" data-type="Scholarship" data-tags="Nigeria France masters international">
           <div class="card-top"><span class="category">INTERNATIONAL · SCHOLARSHIP</span><span class="bookmark" aria-hidden="true">☆</span></div>
           <div class="provider-icon blue">T</div><h3>NNPC / TotalEnergies International Scholarship</h3><p class="card-desc">Full-board master's scholarship opportunity in France for eligible young Nigerian graduates.</p>
           <div class="meta"><span>Postgraduate</span><span>France</span></div>
+          <button class="details-button" type="button" data-details>View eligibility & details →</button>
           <div class="card-bottom"><span class="status status-open">Open · Closes 31 Jan 2027</span><a href="https://csr-ngscholarship.totalenergies.com/scholarships" target="_blank" rel="noopener">Official details ↗</a></div>
         </article>
         <article class="opportunity-card" data-name="Commonwealth Shared Scholarships 2027" data-level="Postgraduate" data-type="Scholarship" data-tags="Nigeria United Kingdom masters Commonwealth fully funded">
           <div class="card-top"><span class="category">COMMONWEALTH · SCHOLARSHIP</span><span class="bookmark" aria-hidden="true">☆</span></div>
           <div class="provider-icon purple">C</div><h3>Commonwealth Shared Scholarships 2027</h3><p class="card-desc">Master's funding at participating UK universities for eligible applicants from Commonwealth countries, including Nigeria.</p>
           <div class="meta"><span>Postgraduate</span><span>United Kingdom</span></div>
+          <button class="details-button" type="button" data-details>View eligibility & details →</button>
           <div class="card-bottom"><span class="status status-open">Closes 8 Dec 2026 · 16:00 GMT</span><a href="https://cscuk.fcdo.gov.uk/scholarships/commonwealth-shared-scholarships-applications" target="_blank" rel="noopener">Official details ↗</a></div>
         </article>
         <article class="opportunity-card" data-name="Federal Government Nigerian Scholarship Award" data-level="Various levels" data-type="Scholarship" data-tags="Nigeria undergraduate HND postgraduate public tertiary institutions">
           <div class="card-top"><span class="category">NIGERIA · GOVERNMENT</span><span class="bookmark" aria-hidden="true">☆</span></div>
           <div class="provider-icon green">N</div><h3>Nigerian Scholarship Award</h3><p class="card-desc">Federal Ministry of Education programme information for eligible students in Nigerian public tertiary institutions. Check the portal for a current application call.</p>
           <div class="meta"><span>Undergraduate · HND · Postgraduate</span><span>Nigeria</span></div>
+          <button class="details-button" type="button" data-details>View eligibility & details →</button>
           <div class="card-bottom"><span class="status status-info">Check portal for next call</span><a href="https://scholarship.education.gov.ng/" target="_blank" rel="noopener">Official portal ↗</a></div>
         </article>
       </div>
@@ -107,6 +111,11 @@
 
     <section class="newsletter" id="newsletter"><div><span class="section-kicker light-kicker">STAY INFORMED</span><h2>Don't miss your next opportunity.</h2><p>Join our interest list to hear when new scholarship resources and student guides are available.</p></div><form id="interestForm"><label for="emailInput" class="sr-only">Email address</label><input id="emailInput" type="email" placeholder="Enter your email address" required><button class="button button-gold" type="submit">Register interest →</button><small id="formMessage">This early version does not yet store email addresses. Please check back as we launch alerts.</small></form></section>
   </main>
+
+  <dialog class="details-dialog" id="detailsDialog" aria-labelledby="detailsTitle">
+    <div class="dialog-head"><span class="section-kicker">SCHOLARSHIP DETAILS</span><button type="button" class="dialog-close" id="closeDetails" aria-label="Close details">×</button></div>
+    <h2 id="detailsTitle"></h2><div id="detailsContent"></div><div class="dialog-actions"><a class="button button-green" id="detailsOfficialLink" href="#" target="_blank" rel="noopener">Visit official source ↗</a><button type="button" class="text-link" id="closeDetailsBottom">Close</button></div>
+  </dialog>
   <footer><div class="footer-main"><a class="brand footer-brand" href="#"><span class="brand-mark">S<span>+</span></span><span>Scholarship Finder <b>Africa</b></span></a><p>Helping students discover opportunities to learn, lead and make an impact.</p><div class="footer-links"><a href="#opportunities">Opportunities</a><a href="#how-it-works">How it works</a><a href="#guides">Guides</a><a href="mailto:hello@scholarshipfinderafrica.com">Contact</a></div></div><div class="copyright"><span>© <span id="year"></span> Scholarship Finder Africa</span><span>Created by <strong>Iheanacho Simon Lucky</strong></span></div><p class="disclaimer">We are an independent information platform and are not a scholarship provider or government agency. Always verify information with the official organisation.</p></footer>
   <script src="app.js"></script>
 </body>
