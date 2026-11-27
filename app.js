@@ -36,7 +36,7 @@ document.getElementById("interestForm").addEventListener("submit",event=>{
 });
 
 const scholarshipDetails={
-  "NNPC / TotalEnergies National Merit Scholarship Scheme":{
+  "NNPC TotalEnergies National Merit Scholarship Scheme":{
     title:"NNPC Limited / TotalEnergies National Merit Scholarship Scheme",
     overview:"An annual scholarship grant for eligible first-year and second-year full-time Nigerian undergraduates at NUC-accredited universities. The official portal lists the 2026/2027 application period as 10 November to 7 December 2026.",
     eligibility:["Nigerian citizen enrolled full-time at an NUC-accredited Nigerian university.","Certified 100-level or 200-level student at the time of application.","UTME score of at least 200.","For 200-level applicants, CGPA of at least 2.5 on a 5.0 scale.","Students in 300 level or above and current beneficiaries of similar oil-and-gas industry awards are not eligible."],
@@ -45,7 +45,7 @@ const scholarshipDetails={
     deadline:"Official portal currently states: 7 December 2026. Application is free; beware of anyone asking for payment.",
     source:"https://csr-ngscholarship.totalenergies.com/scholarships/nmss"
   },
-  "NNPC / TotalEnergies International Scholarship":{
+  "NNPC TotalEnergies International Scholarship":{
     title:"NNPC Limited / TotalEnergies International Scholarship",
     overview:"A full-board scholarship for eligible young Nigerian graduates to pursue master's study at universities in France. The official portal lists the 2027/2028 application period as 3 November 2026 to 31 January 2027.",
     eligibility:["Be a suitably qualified young Nigerian.","Hold a university degree with at least Second Class Upper, obtained no earlier than five years before application.","Have completed the mandatory NYSC scheme.","The programme areas listed by the provider include Management Science, Engineering and Geosciences."],
@@ -79,7 +79,7 @@ const detailsContent=document.getElementById("detailsContent");
 const officialLink=document.getElementById("detailsOfficialLink");
 function openDetails(card){
   const data=scholarshipDetails[card.dataset.name];
-  if(!data)return;
+  if(!data){detailsTitle.textContent=card.querySelector("h3").textContent;detailsContent.textContent="Details are being prepared. Please use the official provider link on this card.";officialLink.href=card.querySelector(".card-bottom a").href;dialog.showModal();return;}
   detailsTitle.textContent=data.title;
   detailsContent.replaceChildren();
   const addSection=(heading,body)=>{
