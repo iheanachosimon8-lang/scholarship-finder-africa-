@@ -23,7 +23,7 @@
       <a href="#opportunities">Find scholarships</a>
       <a href="#how-it-works">How it works</a>
       <a href="#guides">Application tips</a>
-      <a class="nav-cta" href="#newsletter">Get alerts <span>→</span></a>
+      <a href="#student-account">Student account</a><a class="nav-cta" href="#newsletter">Get alerts <span>→</span></a>
     </nav>
   </header>
 
@@ -62,7 +62,7 @@
       <div class="section-heading"><div><span class="section-kicker">START YOUR SEARCH</span><h2>Explore programme profiles</h2><p>Get familiar with established funding programmes and visit their official websites for current application information.</p></div><span class="pill">Nigeria first · Africa next</span></div>
       <div class="cards" id="opportunityList">
         <article class="opportunity-card" data-name="NNPC TotalEnergies National Merit Scholarship Scheme" data-level="Undergraduate" data-type="Scholarship" data-tags="Nigeria first year second year undergraduate merit">
-          <div class="card-top"><span class="category">NIGERIA · SCHOLARSHIP</span><span class="bookmark" aria-hidden="true">☆</span></div>
+          <div class="card-top"><span class="category">NIGERIA · SCHOLARSHIP</span><button class="bookmark save-button" type="button" data-save aria-label="Save scholarship" title="Save scholarship">☆</button></div>
           <div class="provider-icon gold">T</div><h3>NNPC / TotalEnergies National Merit Scholarship</h3><p class="card-desc">Annual scholarship grant for eligible first-year and second-year full-time Nigerian undergraduates.</p>
           <div class="meta"><span>Undergraduate</span><span>Nigeria</span></div>
           <button class="details-button" type="button" data-details>View eligibility & details →</button>
@@ -116,7 +116,10 @@
     <div class="dialog-head"><span class="section-kicker">SCHOLARSHIP DETAILS</span><button type="button" class="dialog-close" id="closeDetails" aria-label="Close details">×</button></div>
     <h2 id="detailsTitle"></h2><div id="detailsContent"></div><div class="dialog-actions"><a class="button button-green" id="detailsOfficialLink" href="#" target="_blank" rel="noopener">Visit official source ↗</a><button type="button" class="text-link" id="closeDetailsBottom">Close</button></div>
   </dialog>
+  <section class="account-section section-wrap" id="student-account"><div class="section-heading"><div><span class="section-kicker">YOUR STUDENT SPACE</span><h2>Save opportunities for later</h2><p>Create an account or sign in to keep track of scholarships you want to apply for.</p></div></div><div class="account-panel"><div id="authSignedOut"><form id="authForm"><label for="authEmail">Email address</label><input id="authEmail" type="email" placeholder="you@example.com" required><label for="authPassword">Password</label><input id="authPassword" type="password" minlength="8" placeholder="At least 8 characters" required><div class="auth-actions"><button class="button button-green" type="submit" id="signInButton">Sign in</button><button class="button button-gold" type="button" id="signUpButton">Create account</button></div></form><p id="authMessage" class="auth-message" aria-live="polite">Use an email address you can access. We may send a confirmation email.</p></div><div id="authSignedIn" hidden><p id="signedInLabel"></p><h3>Your saved scholarships</h3><ul id="savedList"></ul><button class="button button-green" type="button" id="signOutButton">Sign out</button></div></div></section>
   <footer><div class="footer-main"><a class="brand footer-brand" href="#"><span class="brand-mark">S<span>+</span></span><span>Scholarship Finder <b>Africa</b></span></a><p>Helping students discover opportunities to learn, lead and make an impact.</p><div class="footer-links"><a href="#opportunities">Opportunities</a><a href="#how-it-works">How it works</a><a href="#guides">Guides</a><a href="mailto:hello@scholarshipfinderafrica.com">Contact</a></div></div><div class="copyright"><span>© <span id="year"></span> Scholarship Finder Africa</span><span>Created by <strong>Iheanacho Simon Lucky</strong></span></div><p class="disclaimer">We are an independent information platform and are not a scholarship provider or government agency. Always verify information with the official organisation.</p></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
